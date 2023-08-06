@@ -8,6 +8,9 @@ describe 'nginx' do
       let(:facts) { os_facts }
 
       it { is_expected.to compile.with_all_deps }
+      it { is_expected.to contain_class('nginx::install') }
+      it { is_expected.to contain_class('nginx::service') }
+      it { is_expected.to contain_class('nginx::config') }
     end
   end
 end

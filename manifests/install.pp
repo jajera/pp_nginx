@@ -7,13 +7,6 @@
 class nginx::install {
   package { 'nginx':
     ensure => 'installed',
-  }
-
-  service { 'nginx':
-    ensure     => 'running',
-    enable     => true,
-    hasstatus  => true,
-    hasrestart => true,
-    require    => Package['nginx'],
+    notify => Class['nginx::service'],
   }
 }
