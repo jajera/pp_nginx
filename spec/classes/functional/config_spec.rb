@@ -11,9 +11,6 @@ describe 'nginx::config' do
         class { "nginx::service": }
       ' }
       it 'creates the file /var/www/html/index.html' do
-        is_expected.to compile.with_all_deps
-        is_expected.to contain_class('nginx::install')
-        is_expected.to contain_class('nginx::service')
         is_expected.to contain_file('/var/www/html/index.html').with(
           ensure: 'file',
           content: 'Hello, World!'

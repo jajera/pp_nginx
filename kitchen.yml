@@ -1,0 +1,68 @@
+# ---
+# driver:
+#   name: podman
+
+# platforms:
+#   - name: centos-7
+#     driver:
+#       image: centos:7
+
+# suites:
+#   - name: default
+
+# # driver:
+# #   name: dokken
+# #   box: redhat/ubi8
+# #   # privileged: true
+# #   # use_sudo: false
+
+# # driver_config:
+# #   username: kitchen
+  
+# # provisioner:
+# #   name: puppet_agent
+# #   puppet_debug: true
+# #   puppet_verbose: true
+# #   # manifests_path: ./manifests
+# #   # modules_path: /repository/puppet_repo/modules-mycompany
+# #   # hiera_data_path: /repository/puppet_repo/hieradata
+
+# # # transport:
+# # #   name: dokken
+
+# # # verifier:
+# # #   name: puppet
+# # # verifier:
+# # #   ruby_bindir: '/usr/bin'
+
+# # # platforms:
+# # #   - name: default
+# # #     driver_config:
+# # #       box: redhat/ubi8
+        
+# # platforms:
+# # #   # - name: fedora-39
+# # #   #   driver:
+# # #   #     image: dokken/fedora-39
+# # #   #     pid_one_command: /usr/lib/systemd/systemd
+
+# # #   # - name: centos-7
+# # #   #   driver:
+# # #   #     image: dokken/centos-7
+# # #   #     pid_one_command: /usr/lib/systemd/systemd
+
+# #   - name: redhat-ubi8
+# #     driver:
+# #       image: redhat/ubi8
+# #       pid_one_command: /usr/lib/systemd/systemd
+         
+# # suites:
+# #   - name: default
+# #     # provisioner:
+# #     #   manifest: init.pp
+# #     # attributes: 
+# #     #   authorization: 
+# #     #     sudo: 
+# #     #       users: ['kitchen'] 
+# #     #       passwordless: true 
+# #     #       include_sudoers_d: true 
